@@ -475,6 +475,16 @@
         "build": {
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
+      },
+      "HealthEat.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/HealthEat.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HealthEat.Core.dll": {}
+        }
       }
     },
     "net7.0/browser-wasm": {
@@ -944,6 +954,16 @@
         },
         "build": {
           "buildTransitive/net6.0/System.Text.Json.targets": {}
+        }
+      },
+      "HealthEat.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/HealthEat.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HealthEat.Core.dll": {}
         }
       }
     }
@@ -1792,28 +1812,39 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "HealthEat.Core/1.0.0": {
+      "type": "project",
+      "path": "../HealthEat.Core/HealthEat.Core.csproj",
+      "msbuildProject": "../HealthEat.Core/HealthEat.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "HealthEat.Core >= 1.0.0",
       "Microsoft.AspNetCore.Components.WebAssembly >= 7.0.5",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 7.0.5"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Viacheslav Trus\\.nuget\\packages\\": {}
+    "C:\\Users\\Viacheslav\\.nuget\\packages\\": {},
+    "D:\\Program file\\Visual Studi Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Viacheslav Trus\\Desktop\\health_eat\\HealthEat.SPA\\HealthEat.SPA\\HealthEat.SPA.csproj",
+      "projectUniqueName": "D:\\develop\\freelance\\Healt_Eat\\HealthEat.SPA\\HealthEat.SPA\\HealthEat.SPA.csproj",
       "projectName": "HealthEat.SPA",
-      "projectPath": "C:\\Users\\Viacheslav Trus\\Desktop\\health_eat\\HealthEat.SPA\\HealthEat.SPA\\HealthEat.SPA.csproj",
-      "packagesPath": "C:\\Users\\Viacheslav Trus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Viacheslav Trus\\Desktop\\health_eat\\HealthEat.SPA\\HealthEat.SPA\\obj\\",
+      "projectPath": "D:\\develop\\freelance\\Healt_Eat\\HealthEat.SPA\\HealthEat.SPA\\HealthEat.SPA.csproj",
+      "packagesPath": "C:\\Users\\Viacheslav\\.nuget\\packages\\",
+      "outputPath": "D:\\develop\\freelance\\Healt_Eat\\HealthEat.SPA\\HealthEat.SPA\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\Program file\\Visual Studi Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Viacheslav Trus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Viacheslav\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1821,12 +1852,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\develop\\freelance\\Healt_Eat\\HealthEat.SPA\\HealthEat.Core\\HealthEat.Core.csproj": {
+              "projectPath": "D:\\develop\\freelance\\Healt_Eat\\HealthEat.SPA\\HealthEat.Core\\HealthEat.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
