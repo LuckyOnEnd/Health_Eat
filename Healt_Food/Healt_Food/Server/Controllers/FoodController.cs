@@ -31,9 +31,21 @@ namespace Healt_Food.Server.Controllers
             return foods.Where(x => x.Favorite == true).ToList();
         }
 
-        [HttpPost]
-        public IActionResult AddToFavorite()
+        [HttpPut]
+        public async Task<IActionResult> AddToFavorite(Food food)
         {
+            var foodLast = await _dbContext.Foods.FirstOrDefaultAsync(x => x.Id == food.Id);
+
+            foodLast.Fat = food.Fat;
+            foodLast.Favorite = food.Favorite;
+            foodLast.DayOfWeek = food.DayOfWeek;
+            foodLast.Calories = food.Calories;
+            foodLast.Carbohydrates = food.Carbohydrates;
+            foodLast.Protein = food.Protein;
+
+            _dbContext.Update(foodLast);
+            await _dbContext.SaveChangesAsync();
+
             return Ok();
         }
 

@@ -199,14 +199,14 @@
       "netstandard.dll": "sha256-OYYuPT3JUknj4LdYIa58zF7kDB3tCnLzjCSuhEjtKXM=",
       "System.Private.CoreLib.dll": "sha256-EVS7zPxPV\/41g2mzPwdXtwiigWxI\/SeAHme1IgyD6tc=",
       "Healt_Food.Shared.dll": "sha256-qK3\/lPnO3bnU3pynsGrm3P5PSEJqf6+8l1dAPWCylU0=",
-      "Healt_Food.Client.dll": "sha256-x8KuBlwD9SacflWWWAYzXccFRgEIFFVuD7Rw0Vmkxmc="
+      "Healt_Food.Client.dll": "sha256-H9+lTYat38wJVl9pGZXr+uruz8yKu7ng6yoRErdIEbo="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "Healt_Food.Shared.pdb": "sha256-qKL0N8WYdZ0Q8iQWkzg9GolheZDARlad\/VSJvLuCOaw=",
-      "Healt_Food.Client.pdb": "sha256-1ep2dyQpZg4G2iBwXAST0u\/Hv7LY7IQDC5rwgLfTlpg="
+      "Healt_Food.Client.pdb": "sha256-tnTI5D84hPpSrdLMPzT7gOcLgE9NFOXcH8R6FR7KnaA="
     },
     "runtime": {
       "dotnet.7.0.5.lf22c8d4gd.js": "sha256-codB25EodaFEP43MDCfMBuKXU4LqurUKnQrpoMIFnPs=",
