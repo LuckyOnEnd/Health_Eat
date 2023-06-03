@@ -1,5 +1,6 @@
 ﻿@page "/weekly"
 @using Healt_Food.Shared.Entites;
+@using Healt_Food.Shared.Enums;
 @inject HttpClient Http
 
 <div class="container">
@@ -432,18 +433,18 @@
     {
         foods = await Http.GetFromJsonAsync<List<Food>>("Food");
 
-        mondayPlan = foods.Where(x => x.DayOfWeek == DayOfWeek.Monday).ToList();
+        mondayPlan = foods.Where(x => x.DayOfWeek == DayOfWeekEnum.Monday).ToList();
 
         FatSumInMonday = mondayPlan.Sum(x => Convert.ToInt32(x.Fat));
         CarbohydratesMonday = mondayPlan.Sum(x => Convert.ToInt32(x.Carbohydrates));
         CaloriesSumMonday = mondayPlan.Sum(x => Convert.ToInt32(x.Calories));
         ProteinSumMonday = mondayPlan.Sum(x => Convert.ToInt32(x.Protein));
 
-        tuesdayPlan = foods.Where(x => x.DayOfWeek == DayOfWeek.Tuesday).ToList();
-        wednesdayPlan = foods.Where(x => x.DayOfWeek == DayOfWeek.Wednesday).ToList();
-        thursdayPlan = foods.Where(x => x.DayOfWeek == DayOfWeek.Thursday).ToList();
-        fridayPlan = foods.Where(x => x.DayOfWeek == DayOfWeek.Friday).ToList();
-        saturdayPlan = foods.Where(x => x.DayOfWeek == DayOfWeek.Saturday).ToList();
-        sundayPlan = foods.Where(x => x.DayOfWeek == DayOfWeek.Sunday).ToList();
+        tuesdayPlan = foods.Where(x => x.DayOfWeek == DayOfWeekEnum.Tuesday).ToList();
+        wednesdayPlan = foods.Where(x => x.DayOfWeek == DayOfWeekEnum.Wednesday).ToList();
+        thursdayPlan = foods.Where(x => x.DayOfWeek == DayOfWeekEnum.Thursday).ToList();
+        fridayPlan = foods.Where(x => x.DayOfWeek == DayOfWeekEnum.Friday).ToList();
+        saturdayPlan = foods.Where(x => x.DayOfWeek == DayOfWeekEnum.Saturday).ToList();
+        sundayPlan = foods.Where(x => x.DayOfWeek == DayOfWeekEnum.Sunday).ToList();
     }
 }

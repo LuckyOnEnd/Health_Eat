@@ -9,41 +9,41 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = Healt_Food.Client
 build_property.RootNamespace = Healt_Food.Client
-build_property.ProjectDir = D:\develop\freelance\health_eat\Healt_Food\Healt_Food\Client\
+build_property.ProjectDir = C:\Users\km630\Source\Repos\Health_Eat\Healt_Food\Healt_Food\Client\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\develop\freelance\health_eat\Healt_Food\Healt_Food\Client
+build_property.MSBuildProjectDirectory = C:\Users\km630\Source\Repos\Health_Eat\Healt_Food\Healt_Food\Client
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/develop/freelance/health_eat/Healt_Food/Healt_Food/Client/App.razor]
+[C:/Users/km630/Source/Repos/Health_Eat/Healt_Food/Healt_Food/Client/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/develop/freelance/health_eat/Healt_Food/Healt_Food/Client/Pages/FavoritesList.razor]
+[C:/Users/km630/Source/Repos/Health_Eat/Healt_Food/Healt_Food/Client/Pages/FavoritesList.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmF2b3JpdGVzTGlzdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/develop/freelance/health_eat/Healt_Food/Healt_Food/Client/Pages/Index.razor]
+[C:/Users/km630/Source/Repos/Health_Eat/Healt_Food/Healt_Food/Client/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/develop/freelance/health_eat/Healt_Food/Healt_Food/Client/Pages/WeeklyList.razor]
+[C:/Users/km630/Source/Repos/Health_Eat/Healt_Food/Healt_Food/Client/Pages/WeeklyList.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2Vla2x5TGlzdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/develop/freelance/health_eat/Healt_Food/Healt_Food/Client/Shared/SurveyPrompt.razor]
+[C:/Users/km630/Source/Repos/Health_Eat/Healt_Food/Healt_Food/Client/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/develop/freelance/health_eat/Healt_Food/Healt_Food/Client/_Imports.razor]
+[C:/Users/km630/Source/Repos/Health_Eat/Healt_Food/Healt_Food/Client/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/develop/freelance/health_eat/Healt_Food/Healt_Food/Client/Shared/MainLayout.razor]
+[C:/Users/km630/Source/Repos/Health_Eat/Healt_Food/Healt_Food/Client/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-7a4jz82ln3
 
-[D:/develop/freelance/health_eat/Healt_Food/Healt_Food/Client/Shared/NavMenu.razor]
+[C:/Users/km630/Source/Repos/Health_Eat/Healt_Food/Healt_Food/Client/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-gekdiy5mbb
