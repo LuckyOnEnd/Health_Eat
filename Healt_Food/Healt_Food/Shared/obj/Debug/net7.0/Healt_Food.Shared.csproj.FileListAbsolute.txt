@@ -1,0 +1,12 @@
+D:\develop\freelance\Healt_Food\Healt_Food\Shared\bin\Debug\net7.0\Healt_Food.Shared.deps.json
+D:\develop\freelance\Healt_Food\Healt_Food\Shared\bin\Debug\net7.0\Healt_Food.Shared.dll
+D:\develop\freelance\Healt_Food\Healt_Food\Shared\bin\Debug\net7.0\Healt_Food.Shared.pdb
+D:\develop\freelance\Healt_Food\Healt_Food\Shared\obj\Debug\net7.0\Healt_Food.Shared.csproj.AssemblyReference.cache
+D:\develop\freelance\Healt_Food\Healt_Food\Shared\obj\Debug\net7.0\Healt_Food.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\develop\freelance\Healt_Food\Healt_Food\Shared\obj\Debug\net7.0\Healt_Food.Shared.AssemblyInfoInputs.cache
+D:\develop\freelance\Healt_Food\Healt_Food\Shared\obj\Debug\net7.0\Healt_Food.Shared.AssemblyInfo.cs
+D:\develop\freelance\Healt_Food\Healt_Food\Shared\obj\Debug\net7.0\Healt_Food.Shared.csproj.CoreCompileInputs.cache
+D:\develop\freelance\Healt_Food\Healt_Food\Shared\obj\Debug\net7.0\Healt_Food.Shared.dll
+D:\develop\freelance\Healt_Food\Healt_Food\Shared\obj\Debug\net7.0\refint\Healt_Food.Shared.dll
+D:\develop\freelance\Healt_Food\Healt_Food\Shared\obj\Debug\net7.0\Healt_Food.Shared.pdb
+D:\develop\freelance\Healt_Food\Healt_Food\Shared\obj\Debug\net7.0\ref\Healt_Food.Shared.dll

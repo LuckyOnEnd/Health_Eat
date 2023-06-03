@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Healt_Food.Server.props" />
+</Project>
