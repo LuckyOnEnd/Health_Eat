@@ -7,6 +7,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
+      "Blazored.Modal.dll": "sha256-Sr30UiM7JErBe8hojY6HAgaOOgfQE5zHijI0uVypmkM=",
       "Microsoft.AspNetCore.Authorization.dll": "sha256-\/EkWRHMHBhfvvlx5hLVtXGPm8+Gyp4WkPiKKiiJIrqQ=",
       "Microsoft.AspNetCore.Components.dll": "sha256-SvjxqyTqc68zPsYivPRkvjKRhUg5zYufzqwGNS83bwg=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-eoQ2CgfBGkvbK4QUMBgFDPIBqJem+g8247Fb3ZmnmCI=",
@@ -198,18 +199,18 @@
       "mscorlib.dll": "sha256-qqpKd+W+AFb6UxudEYEKzrz7ma81p5LrWUwPBVvHV4U=",
       "netstandard.dll": "sha256-OYYuPT3JUknj4LdYIa58zF7kDB3tCnLzjCSuhEjtKXM=",
       "System.Private.CoreLib.dll": "sha256-EVS7zPxPV\/41g2mzPwdXtwiigWxI\/SeAHme1IgyD6tc=",
-      "Healt_Food.Shared.dll": "sha256-2dJLKuU3AM2MIjlcq2GLMY1tZG3kpMoiYHDvZwUrnD0=",
-      "Healt_Food.Client.dll": "sha256-chKlb2JgYXdhJD4aN5IxhnNQWKN7zQIv8CYGq\/uCTFw="
+      "Healt_Food.Shared.dll": "sha256-ZNAERAfwTMMirIWht0psQ4KtzI2B0PwyFLjfIl2j\/Vw=",
+      "Healt_Food.Client.dll": "sha256-+LyCH1hz8UHBI+coK\/wZelqdVkHfih8RYD3v7ZCl3K4="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "Healt_Food.Shared.pdb": "sha256-AvPzGKHPGwtRlzTK\/1CWeHFCRRBzQDMcXC9wRepy5Ac=",
-      "Healt_Food.Client.pdb": "sha256-EIcuy52kja75veBDQ696tk9mQMSto79e20c97P3XTEM="
+      "Healt_Food.Shared.pdb": "sha256-JgTvylB+tHQHp1gsKBnZm9zmK2EcVwUH8rIRQI0OsLo=",
+      "Healt_Food.Client.pdb": "sha256-ua3\/uXdGUujRfHKGzx8q7f1yq52VyrRqoh6oinX3qvQ="
     },
     "runtime": {
-      "dotnet.7.0.5.0i7w6f2hxu.js": "sha256-codB25EodaFEP43MDCfMBuKXU4LqurUKnQrpoMIFnPs=",
+      "dotnet.7.0.5.lf22c8d4gd.js": "sha256-codB25EodaFEP43MDCfMBuKXU4LqurUKnQrpoMIFnPs=",
       "dotnet.timezones.blat": "sha256-rIVQOJ+gHn4DeRSq6Ac3CURS8YBJG3P4CtYPfIuZ\/kk=",
       "dotnet.wasm": "sha256-6u4NhRISPvoDQ8pKvno9KKJh2aKqzTavj4dpcdFCV\/o=",
       "icudt.dat": "sha256-tO5O5YzMTVSaKBboxAqezOQL9ewmupzV2JrB5Rkc8a4=",

@@ -53,6 +53,20 @@
           }
         }
       },
+      "Blazored.Modal/7.1.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "7.0.5",
+          "Microsoft.AspNetCore.Components.Web": "7.0.5",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
+          "Microsoft.JSInterop.WebAssembly": "7.0.5"
+        },
+        "runtime": {
+          "lib/net6.0/Blazored.Modal.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "runtime": {
           "lib/net6.0/Humanizer.dll": {
@@ -775,6 +789,7 @@
       },
       "Healt_Food.Client/1.0.0": {
         "dependencies": {
+          "Blazored.Modal": "7.1.0",
           "Healt_Food.Shared": "1.0.0",
           "Microsoft.AspNetCore.Components.WebAssembly": "7.0.5"
         },
@@ -808,6 +823,13 @@
       "sha512": "sha512-EycyMsb6rD2PK9P0SyibFfEhvWWttdrYhyPF4f41uzdB/44yQlV+2Wehxyg489Rj6gbPvSPgbKq0xsHJBhipZA==",
       "path": "azure.identity/1.6.0",
       "hashPath": "azure.identity.1.6.0.nupkg.sha512"
+    },
+    "Blazored.Modal/7.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ft5bX5barhyzpQc9jjU029ByrAQXgqSMItwhmEbr0pb7r+of8XH0E/OyS8K6O6Disq5R+p4wpt+W+NGg3/OTMA==",
+      "path": "blazored.modal/7.1.0",
+      "hashPath": "blazored.modal.7.1.0.nupkg.sha512"
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",

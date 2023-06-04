@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\km630\\Source\\Repos\\Health_Eat\\Healt_Food\\Healt_Food\\Shared\\Healt_Food.Shared.csproj": {}
+    "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Shared\\Healt_Food.Shared.csproj": {}
   },
   "projects": {
-    "C:\\Users\\km630\\Source\\Repos\\Health_Eat\\Healt_Food\\Healt_Food\\Shared\\Healt_Food.Shared.csproj": {
+    "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Shared\\Healt_Food.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\km630\\Source\\Repos\\Health_Eat\\Healt_Food\\Healt_Food\\Shared\\Healt_Food.Shared.csproj",
+        "projectUniqueName": "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Shared\\Healt_Food.Shared.csproj",
         "projectName": "Healt_Food.Shared",
-        "projectPath": "C:\\Users\\km630\\Source\\Repos\\Health_Eat\\Healt_Food\\Healt_Food\\Shared\\Healt_Food.Shared.csproj",
-        "packagesPath": "C:\\Users\\km630\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\km630\\Source\\Repos\\Health_Eat\\Healt_Food\\Healt_Food\\Shared\\obj\\",
+        "projectPath": "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Shared\\Healt_Food.Shared.csproj",
+        "packagesPath": "C:\\Users\\Viacheslav\\.nuget\\packages\\",
+        "outputPath": "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\Program file\\Visual Studi Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\km630\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Viacheslav\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

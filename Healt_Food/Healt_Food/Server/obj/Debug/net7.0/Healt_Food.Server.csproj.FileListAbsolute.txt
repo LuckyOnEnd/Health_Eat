@@ -289,3 +289,4 @@ C:\Users\km630\Source\Repos\Health_Eat\Healt_Food\Healt_Food\Server\obj\Debug\ne
 C:\Users\km630\Source\Repos\Health_Eat\Healt_Food\Healt_Food\Server\obj\Debug\net7.0\Healt_Food.Server.pdb
 C:\Users\km630\Source\Repos\Health_Eat\Healt_Food\Healt_Food\Server\obj\Debug\net7.0\Healt_Food.Server.genruntimeconfig.cache
 C:\Users\km630\Source\Repos\Health_Eat\Healt_Food\Healt_Food\Server\obj\Debug\net7.0\ref\Healt_Food.Server.dll
+D:\develop\freelance\Health_Eat\Healt_Food\Healt_Food\Server\bin\Debug\net7.0\Blazored.Modal.dll

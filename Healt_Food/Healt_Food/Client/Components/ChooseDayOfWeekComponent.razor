@@ -1,0 +1,27 @@
+﻿@using Healt_Food.Client.ViewModel;
+@using Healt_Food.Shared.Entites;
+@using Healt_Food.Shared.Enums;
+
+@inject HttpClient Http
+@inject FoodViewModel model
+
+<InputSelect @bind-Value="dayOfWeek">
+    @foreach (var day in Enum.GetValues(typeof(DayOfWeekEnum)))
+    {
+        <option>@day</option>
+    }
+</InputSelect>
+
+<button @onclick="() => AddToWeeklyPlan()">Choose</button>
+@code {
+    public Food food { get; set; }
+    private DayOfWeekEnum dayOfWeek;
+
+    private async Task AddToWeeklyPlan ()
+    {
+        //check
+        Food food = model._food;
+        food.DayOfWeek = dayOfWeek;
+        await Http.PutAsJsonAsync("Food", food);
+    }
+}

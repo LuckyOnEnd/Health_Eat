@@ -1648,10 +1648,6 @@ D:\develop\freelance\health_eat\Healt_Food\Healt_Food\Client\obj\Debug\net7.0\bu
 D:\develop\freelance\health_eat\Healt_Food\Healt_Food\Client\obj\Debug\net7.0\build-gz\Xrx8lJ4x.gz
 D:\develop\freelance\health_eat\Healt_Food\Healt_Food\Client\obj\Debug\net7.0\build-gz\KNh6ZUpa.gz
 D:\develop\freelance\health_eat\Healt_Food\Healt_Food\Client\obj\Debug\net7.0\build-gz\xkmMb8rb.gz
-D:\develop\freelance\health_eat\Healt_Food\Healt_Food\Client\obj\Debug\net7.0\build-gz\Ph2rqXO5.gz
-D:\develop\freelance\health_eat\Healt_Food\Healt_Food\Client\obj\Debug\net7.0\build-gz\CPCRoqwS.gz
-D:\develop\freelance\health_eat\Healt_Food\Healt_Food\Client\obj\Debug\net7.0\build-gz\iI9nikXk.gz
-D:\develop\freelance\health_eat\Healt_Food\Healt_Food\Client\obj\Debug\net7.0\build-gz\Xed+UOx2.gz
 D:\develop\freelance\health_eat\Healt_Food\Healt_Food\Client\obj\Debug\net7.0\build-gz\TsqFv09E.gz
 D:\develop\freelance\health_eat\Healt_Food\Healt_Food\Client\obj\Debug\net7.0\blazor.boot.json
 D:\develop\freelance\health_eat\Healt_Food\Healt_Food\Client\obj\Debug\net7.0\staticwebassets\msbuild.Healt_Food.Client.Microsoft.AspNetCore.StaticWebAssets.props
@@ -2506,3 +2502,11 @@ C:\Users\km630\Source\Repos\Health_Eat\Healt_Food\Healt_Food\Client\obj\Debug\ne
 C:\Users\km630\Source\Repos\Health_Eat\Healt_Food\Healt_Food\Client\obj\Debug\net7.0\refint\Healt_Food.Client.dll
 C:\Users\km630\Source\Repos\Health_Eat\Healt_Food\Healt_Food\Client\obj\Debug\net7.0\Healt_Food.Client.pdb
 C:\Users\km630\Source\Repos\Health_Eat\Healt_Food\Healt_Food\Client\obj\Debug\net7.0\ref\Healt_Food.Client.dll
+D:\develop\freelance\Health_Eat\Healt_Food\Healt_Food\Client\obj\Debug\net7.0\build-gz\1RjdZAz3.gz
+D:\develop\freelance\Health_Eat\Healt_Food\Healt_Food\Client\obj\Debug\net7.0\build-gz\rbIfv0IY.gz
+D:\develop\freelance\Health_Eat\Healt_Food\Healt_Food\Client\obj\Debug\net7.0\build-gz\Zsvqe8aX.gz
+D:\develop\freelance\Health_Eat\Healt_Food\Healt_Food\Client\obj\Debug\net7.0\build-gz\ZEx+L+Kn.gz
+D:\develop\freelance\Health_Eat\Healt_Food\Healt_Food\Client\bin\Debug\net7.0\wwwroot\_framework\Blazored.Modal.dll
+D:\develop\freelance\Health_Eat\Healt_Food\Healt_Food\Client\bin\Debug\net7.0\wwwroot\_framework\Blazored.Modal.dll.gz
+D:\develop\freelance\Health_Eat\Healt_Food\Healt_Food\Client\bin\Debug\net7.0\Blazored.Modal.dll
+D:\develop\freelance\Health_Eat\Healt_Food\Healt_Food\Client\obj\Debug\net7.0\build-gz\RwSH4pcj.gz
