@@ -4247,23 +4247,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Viacheslav\\.nuget\\packages\\": {},
-    "D:\\Program file\\Visual Studi Shared\\NuGetPackages": {}
+    "C:\\Users\\qwew1\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Server\\Healt_Food.Server.csproj",
+      "projectUniqueName": "D:\\work\\Healt_Food\\Healt_Food\\Server\\Healt_Food.Server.csproj",
       "projectName": "Healt_Food.Server",
-      "projectPath": "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Server\\Healt_Food.Server.csproj",
-      "packagesPath": "C:\\Users\\Viacheslav\\.nuget\\packages\\",
-      "outputPath": "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Server\\obj\\",
+      "projectPath": "D:\\work\\Healt_Food\\Healt_Food\\Server\\Healt_Food.Server.csproj",
+      "packagesPath": "C:\\Users\\qwew1\\.nuget\\packages\\",
+      "outputPath": "D:\\work\\Healt_Food\\Healt_Food\\Server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Program file\\Visual Studi Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Viacheslav\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\qwew1\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4272,7 +4272,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -4280,11 +4279,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Client\\Healt_Food.Client.csproj": {
-              "projectPath": "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Client\\Healt_Food.Client.csproj"
+            "D:\\work\\Healt_Food\\Healt_Food\\Client\\Healt_Food.Client.csproj": {
+              "projectPath": "D:\\work\\Healt_Food\\Healt_Food\\Client\\Healt_Food.Client.csproj"
             },
-            "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Shared\\Healt_Food.Shared.csproj": {
-              "projectPath": "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Shared\\Healt_Food.Shared.csproj"
+            "D:\\work\\Healt_Food\\Healt_Food\\Shared\\Healt_Food.Shared.csproj": {
+              "projectPath": "D:\\work\\Healt_Food\\Healt_Food\\Shared\\Healt_Food.Shared.csproj"
             }
           }
         }

@@ -34,3 +34,15 @@ C:\Users\km630\Source\Repos\Health_Eat\Healt_Food\Healt_Food\Shared\obj\Debug\ne
 C:\Users\km630\Source\Repos\Health_Eat\Healt_Food\Healt_Food\Shared\obj\Debug\net7.0\refint\Healt_Food.Shared.dll
 C:\Users\km630\Source\Repos\Health_Eat\Healt_Food\Healt_Food\Shared\obj\Debug\net7.0\Healt_Food.Shared.pdb
 C:\Users\km630\Source\Repos\Health_Eat\Healt_Food\Healt_Food\Shared\obj\Debug\net7.0\ref\Healt_Food.Shared.dll
+D:\work\Healt_Food\Healt_Food\Shared\bin\Debug\net7.0\Healt_Food.Shared.deps.json
+D:\work\Healt_Food\Healt_Food\Shared\bin\Debug\net7.0\Healt_Food.Shared.dll
+D:\work\Healt_Food\Healt_Food\Shared\bin\Debug\net7.0\Healt_Food.Shared.pdb
+D:\work\Healt_Food\Healt_Food\Shared\obj\Debug\net7.0\Healt_Food.Shared.csproj.AssemblyReference.cache
+D:\work\Healt_Food\Healt_Food\Shared\obj\Debug\net7.0\Healt_Food.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\work\Healt_Food\Healt_Food\Shared\obj\Debug\net7.0\Healt_Food.Shared.AssemblyInfoInputs.cache
+D:\work\Healt_Food\Healt_Food\Shared\obj\Debug\net7.0\Healt_Food.Shared.AssemblyInfo.cs
+D:\work\Healt_Food\Healt_Food\Shared\obj\Debug\net7.0\Healt_Food.Shared.csproj.CoreCompileInputs.cache
+D:\work\Healt_Food\Healt_Food\Shared\obj\Debug\net7.0\Healt_Food.Shared.dll
+D:\work\Healt_Food\Healt_Food\Shared\obj\Debug\net7.0\refint\Healt_Food.Shared.dll
+D:\work\Healt_Food\Healt_Food\Shared\obj\Debug\net7.0\Healt_Food.Shared.pdb
+D:\work\Healt_Food\Healt_Food\Shared\obj\Debug\net7.0\ref\Healt_Food.Shared.dll

@@ -1,0 +1,589 @@
+@page "/weekly"
+@using Healt_Food.Shared.Entites;
+@using Healt_Food.Shared.Enums;
+@using Blazored.Modal.Services;
+
+@inject IToastService toastService
+@inject HttpClient Http
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <table class="table table-bordered caption-top table-hover">
+                <caption style="text-align:center;  background-color: rgba(142, 33, 244, 0.737); color: white;">Monday</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Name des Lebensmittels</th>
+                        <th scope="col">Fett (g)</th>
+                        <th scope="col">Kohlenhydrate (g)</th>
+                        <th scope="col">Eiweiß (g)</th>
+                        <th scope="col">Kalorien (kcal)</th>
+                        <th scope="col">Aktionen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var food in mondayPlan)
+                    {
+                        <tr>
+                            <th scope="row">@food.Name</th>
+                            <td>@food.Fat</td>
+                            <td>@food.Carbohydrates</td>
+                            <td>@food.Protein</td>
+                            <td>@food.Calories</td>
+                            <td>
+                                <div class="d-grid gap-2 d-md-block">
+                                    <button type="button" class="btn btn-outline-danger" style="font-size: 10px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                        </svg>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-primary" style="font-size: 10px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                                            <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+                <tfoot>
+                <th scope="row">Gesamt</th>
+                <td>@FatSumInMonday</td>
+                <td>@CarbohydratesMonday</td>
+                <td>@ProteinSumMonday</td>
+                <td>@CaloriesSumMonday</td>
+                <td></td>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="table-responsive-lg">
+            <div class="col-12">
+                <table class="table table-bordered caption-top table-hover">
+                    <caption style="text-align:center; background-color: rgba(142, 33, 244, 0.737); color: white;">Tuesday</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Name des Lebensmittels</th>
+                            <th scope="col">Fett (g)</th>
+                            <th scope="col">Kohlenhydrate (g)</th>
+                            <th scope="col">Eiweiß (g)</th>
+                            <th scope="col">Kalorien (kcal)</th>
+                            <th scope="col">Aktionen</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var food in tuesdayPlan)
+                        {
+                            <tr>
+                                <th scope="row">@food.Name</th>
+                                <td>@food.Fat</td>
+                                <td>@food.Carbohydrates</td>
+                                <td>@food.Protein</td>
+                                <td>@food.Calories</td>
+                                <td>
+                                    <div class="d-grid gap-2 d-md-block">
+                                        <button type="button" class="btn btn-outline-danger" style="font-size: 10px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                            </svg>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-primary" style="font-size: 10px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                                                <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                    <tfoot>
+                    <th scope="row">Gesamt</th>
+                    <td>@FatSumintuesday</td>
+                    <td>@CarbohydratesTuesday</td>
+                    <td>@ProteinSumTuesday</td>
+                    <td>@CaloriesSumTuesday</td>
+                    <td></td>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="table-responsive-lg">
+            <div class="col-12">
+                <table class="table table-bordered caption-top table-hover">
+                    <caption style="text-align:center;  background-color: rgba(142, 33, 244, 0.737); color: white;">Wednesday</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Name des Lebensmittels</th>
+                            <th scope="col">Fett (g)</th>
+                            <th scope="col">Kohlenhydrate (g)</th>
+                            <th scope="col">Eiweiß (g)</th>
+                            <th scope="col">Kalorien (kcal)</th>
+                            <th scope="col">Aktionen</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var food in wednesdayPlan)
+                        {
+                            <tr>
+                                <th scope="row">@food.Name</th>
+                                <td>@food.Fat</td>
+                                <td>@food.Carbohydrates</td>
+                                <td>@food.Protein</td>
+                                <td>@food.Calories</td>
+                                <td>
+                                    <div class="d-grid gap-2 d-md-block">
+                                        <button type="button" class="btn btn-outline-danger" style="font-size: 10px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                            </svg>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-primary" style="font-size: 10px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                                                <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                    <tfoot>
+                    <th scope="row">Gesamt</th>
+                    <td>@FatSumInWednesday</td>
+                    <td>@CarbohydratesWednesday</td>
+                    <td>@ProteinSumWednesday</td>
+                    <td>@CaloriesSumWednesday</td>
+                    <td></td>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="table-responsive-lg">
+            <div class="col-12">
+                <table class="table table-bordered caption-top table-hover">
+                    <caption style="text-align:center; background-color: rgba(142, 33, 244, 0.737); color: white;">Thursday</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Name des Lebensmittels</th>
+                            <th scope="col">Fett (g)</th>
+                            <th scope="col">Kohlenhydrate (g)</th>
+                            <th scope="col">Eiweiß (g)</th>
+                            <th scope="col">Kalorien (kcal)</th>
+                            <th scope="col">Aktionen</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var food in thursdayPlan)
+                        {
+                            <tr>
+                                <th scope="row">@food.Name</th>
+                                <td>@food.Fat</td>
+                                <td>@food.Carbohydrates</td>
+                                <td>@food.Protein</td>
+                                <td>@food.Calories</td>
+                                <td>
+                                    <div class="d-grid gap-2 d-md-block">
+                                        <button type="button" class="btn btn-outline-danger" style="font-size: 10px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                            </svg>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-primary" style="font-size: 10px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                                                <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                    <tfoot>
+                    <th scope="row">Gesamt</th>
+                    <td>@FatSuminthursday</td>
+                    <td>@CarbohydratesThursday</td>
+                    <td>@ProteinSumThursday</td>
+                    <td>@CaloriesSumThursday</td>
+                    <td></td>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="table-responsive-lg">
+            <div class="col-12">
+                <table class="table table-bordered caption-top table-hover">
+                    <caption style="text-align:center;  background-color: rgba(142, 33, 244, 0.737); color: white;">Friday</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Name des Lebensmittels</th>
+                            <th scope="col">Fett (g)</th>
+                            <th scope="col">Kohlenhydrate (g)</th>
+                            <th scope="col">Eiweiß (g)</th>
+                            <th scope="col">Kalorien (kcal)</th>
+                            <th scope="col">Aktionen</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var food in fridayPlan)
+                        {
+                            <tr>
+                                <th scope="row">@food.Name</th>
+                                <td>@food.Fat</td>
+                                <td>@food.Carbohydrates</td>
+                                <td>@food.Protein</td>
+                                <td>@food.Calories</td>
+                                <td>
+                                    <div class="d-grid gap-2 d-md-block">
+                                        <button type="button" class="btn btn-outline-danger" style="font-size: 10px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                            </svg>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-primary" style="font-size: 10px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                                                <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                    <tfoot>
+                    <th scope="row">Gesamt</th>
+                    <td>@FatSumInFriday</td>
+                    <td>@CarbohydratesFriday</td>
+                    <td>@ProteinSumFriday</td>
+                    <td>@CaloriesSumFriday</td>
+                    <td></td>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="table-responsive-lg">
+            <div class="col-12">
+                <table class="table table-bordered caption-top table-hover">
+                    <caption style="text-align:center; background-color: rgba(142, 33, 244, 0.737); color: white;">Saturday</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Name des Lebensmittels</th>
+                            <th scope="col">Fett (g)</th>
+                            <th scope="col">Kohlenhydrate (g)</th>
+                            <th scope="col">Eiweiß (g)</th>
+                            <th scope="col">Kalorien (kcal)</th>
+                            <th scope="col">Aktionen</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var food in saturdayPlan)
+                        {
+                            <tr>
+                                <th scope="row">@food.Name</th>
+                                <td>@food.Fat</td>
+                                <td>@food.Carbohydrates</td>
+                                <td>@food.Protein</td>
+                                <td>@food.Calories</td>
+                                <td>
+                                    <div class="d-grid gap-2 d-md-block">
+                                        <button type="button" class="btn btn-outline-danger" style="font-size: 10px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                            </svg>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-primary" style="font-size: 10px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                                                <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                    <tfoot>
+                    <th scope="row">Gesamt</th>
+                    <td>@FatSumInSaturday</td>
+                    <td>@CarbohydratesSaturday</td>
+                    <td>@ProteinSumSaturday</td>
+                    <td>@CaloriesSumSaturday</td>
+                    <td></td>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="table-responsive-lg">
+            <div class="col-12">
+                <table class="table table-bordered caption-top table-hover">
+                    <caption style="text-align:center; background-color: rgba(142, 33, 244, 0.737); color: white;">Sunday</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Name des Lebensmittels</th>
+                            <th scope="col">Fett (g)</th>
+                            <th scope="col">Kohlenhydrate (g)</th>
+                            <th scope="col">Eiweiß (g)</th>
+                            <th scope="col">Kalorien (kcal)</th>
+                            <th scope="col">Aktionen</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var food in sundayPlan)
+                        {
+                            <tr>
+                                <th scope="row">@food.Name</th>
+                                <td>@food.Fat</td>
+                                <td>@food.Carbohydrates</td>
+                                <td>@food.Protein</td>
+                                <td>@food.Calories</td>
+                                <td>
+                                    <div class="d-grid gap-2 d-md-block">
+                                        <button @onclick="()=>AddToFavorite(food)" type="button" class="btn btn-outline-danger" style="font-size: 10px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                            </svg>
+                                        </button>
+                                        <button @onclick="()=>RemoveFromWeakly(food)" type="button" class="btn btn-outline-primary" style="font-size: 10px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                                                <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                    <tfoot>
+                    <th scope="row">Gesamt</th>
+                    <td>@FatSumInSunday</td>
+                    <td>@CarbohydratesSunday</td>
+                    <td>@ProteinSumSunday</td>
+                    <td>@CaloriesSumSunday</td>
+                    <td></td>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private List<Food> foods = new List<Food>();
+
+    private List<Food> mondayPlan = new List<Food>();
+    private List<Food> tuesdayPlan = new List<Food>();
+    private List<Food> wednesdayPlan = new List<Food>();
+    private List<Food> thursdayPlan = new List<Food>();
+    private List<Food> fridayPlan = new List<Food>();
+    private List<Food> saturdayPlan = new List<Food>();
+    private List<Food> sundayPlan = new List<Food>();
+
+    private double FatSumInMonday = 0;
+    private double CarbohydratesMonday = 0;
+    private double ProteinSumMonday = 0;
+    private double CaloriesSumMonday = 0;
+
+    private double FatSumintuesday = 0;
+    private double CarbohydratesTuesday = 0;
+    private double ProteinSumTuesday = 0;
+    private double CaloriesSumTuesday = 0;
+
+    private double FatSumInWednesday = 0;
+    private double CarbohydratesWednesday = 0;
+    private double ProteinSumWednesday = 0;
+    private double CaloriesSumWednesday = 0;
+
+    private double FatSuminthursday = 0;
+    private double CarbohydratesThursday = 0;
+    private double ProteinSumThursday = 0;
+    private double CaloriesSumThursday = 0;
+
+    private double FatSumInFriday = 0;
+    private double CarbohydratesFriday = 0;
+    private double ProteinSumFriday = 0;
+    private double CaloriesSumFriday = 0;
+
+    private double FatSumInSaturday = 0;
+    private double CarbohydratesSaturday = 0;
+    private double ProteinSumSaturday = 0;
+    private double CaloriesSumSaturday = 0;
+
+    private double FatSumInSunday = 0;
+    private double CarbohydratesSunday = 0;
+    private double ProteinSumSunday = 0;
+    private double CaloriesSumSunday = 0;
+
+    protected override async Task OnInitializedAsync()
+    {
+        foods = await Http.GetFromJsonAsync<List<Food>>("Food");
+
+        mondayPlan = foods.Where(x => x.DayOfWeek == DayOfWeekEnum.Monday).ToList();
+
+        FatSumInMonday = mondayPlan.Sum(x => Convert.ToDouble(x.Fat));
+        CarbohydratesMonday = mondayPlan.Sum(x => Convert.ToDouble(x.Carbohydrates));
+        CaloriesSumMonday = mondayPlan.Sum(x => Convert.ToDouble(x.Calories));
+        ProteinSumMonday = mondayPlan.Sum(x => Convert.ToDouble(x.Protein));
+
+        tuesdayPlan = foods.Where(x => x.DayOfWeek == DayOfWeekEnum.Tuesday).ToList();
+
+        FatSumintuesday = tuesdayPlan.Sum(x => Convert.ToDouble(x.Fat));
+        CarbohydratesTuesday = tuesdayPlan.Sum(x => Convert.ToDouble(x.Carbohydrates));
+        CaloriesSumTuesday = tuesdayPlan.Sum(x => Convert.ToDouble(x.Calories));
+        ProteinSumTuesday = tuesdayPlan.Sum(x => Convert.ToDouble(x.Protein));
+
+        wednesdayPlan = foods.Where(x => x.DayOfWeek == DayOfWeekEnum.Wednesday).ToList();
+
+        FatSumInWednesday = wednesdayPlan.Sum(x => Convert.ToDouble(x.Fat));
+        CarbohydratesWednesday = wednesdayPlan.Sum(x => Convert.ToDouble(x.Carbohydrates));
+        CaloriesSumWednesday = wednesdayPlan.Sum(x => Convert.ToDouble(x.Calories));
+        ProteinSumWednesday = wednesdayPlan.Sum(x => Convert.ToDouble(x.Protein));
+
+        thursdayPlan = foods.Where(x => x.DayOfWeek == DayOfWeekEnum.Thursday).ToList();
+
+        FatSuminthursday = thursdayPlan.Sum(x => Convert.ToDouble(x.Fat));
+        CarbohydratesThursday = thursdayPlan.Sum(x => Convert.ToDouble(x.Carbohydrates));
+        CaloriesSumThursday = thursdayPlan.Sum(x => Convert.ToDouble(x.Calories));
+        ProteinSumThursday = thursdayPlan.Sum(x => Convert.ToDouble(x.Protein));
+
+        fridayPlan = foods.Where(x => x.DayOfWeek == DayOfWeekEnum.Friday).ToList();
+
+        FatSumInFriday = fridayPlan.Sum(x => Convert.ToDouble(x.Fat));
+        CarbohydratesFriday = fridayPlan.Sum(x => Convert.ToDouble(x.Carbohydrates));
+        CaloriesSumFriday = fridayPlan.Sum(x => Convert.ToDouble(x.Calories));
+        ProteinSumFriday = fridayPlan.Sum(x => Convert.ToDouble(x.Protein));
+
+        saturdayPlan = foods.Where(x => x.DayOfWeek == DayOfWeekEnum.Saturday).ToList();
+
+        FatSumInSaturday = saturdayPlan.Sum(x => Convert.ToDouble(x.Fat));
+        CarbohydratesSaturday = saturdayPlan.Sum(x => Convert.ToDouble(x.Carbohydrates));
+        CaloriesSumSaturday = saturdayPlan.Sum(x => Convert.ToDouble(x.Calories));
+        ProteinSumSaturday = saturdayPlan.Sum(x => Convert.ToDouble(x.Protein));
+
+        sundayPlan = foods.Where(x => x.DayOfWeek == DayOfWeekEnum.Sunday).ToList();
+
+        FatSumInSunday = sundayPlan.Sum(x => Convert.ToDouble(x.Fat));
+        CarbohydratesSunday = sundayPlan.Sum(x => Convert.ToDouble(x.Carbohydrates));
+        CaloriesSumSunday = sundayPlan.Sum(x => Convert.ToDouble(x.Calories));
+        ProteinSumSunday = sundayPlan.Sum(x => Convert.ToDouble(x.Protein));
+    }
+
+    private async Task AddToFavorite(Food food)
+    {
+
+
+        if (food.Favorite == true)
+        {
+            toastService.ShowError("Das Essen wurde bereits zur Favoritenliste hinzugefügt");
+        }
+        else
+        {
+            food.Favorite = true;
+            await Http.PutAsJsonAsync("Food", food);
+            toastService.ShowSuccess("erfolgreich zu den Favoriten hinzugefügt");
+
+        }
+    }
+
+    private async Task RemoveFromWeakly(Food food)
+    {
+        if (food.DayOfWeek == DayOfWeekEnum.Monday)
+        {
+            sundayPlan.Remove(food);
+            FatSumInMonday = mondayPlan.Sum(x => Convert.ToDouble(x.Fat));
+            CarbohydratesMonday = mondayPlan.Sum(x => Convert.ToDouble(x.Carbohydrates));
+            CaloriesSumMonday = mondayPlan.Sum(x => Convert.ToDouble(x.Calories));
+            ProteinSumMonday = mondayPlan.Sum(x => Convert.ToDouble(x.Protein));
+        }
+
+        if (food.DayOfWeek == DayOfWeekEnum.Tuesday)
+        {
+            sundayPlan.Remove(food);
+            FatSumintuesday = tuesdayPlan.Sum(x => Convert.ToDouble(x.Fat));
+            CarbohydratesTuesday = tuesdayPlan.Sum(x => Convert.ToDouble(x.Carbohydrates));
+            CaloriesSumTuesday = tuesdayPlan.Sum(x => Convert.ToDouble(x.Calories));
+            ProteinSumTuesday = tuesdayPlan.Sum(x => Convert.ToDouble(x.Protein));
+
+            if (food.DayOfWeek == DayOfWeekEnum.Wednesday)
+            {
+                sundayPlan.Remove(food);
+                FatSumInWednesday = wednesdayPlan.Sum(x => Convert.ToDouble(x.Fat));
+                CarbohydratesWednesday = wednesdayPlan.Sum(x => Convert.ToDouble(x.Carbohydrates));
+                CaloriesSumWednesday = wednesdayPlan.Sum(x => Convert.ToDouble(x.Calories));
+                ProteinSumWednesday = wednesdayPlan.Sum(x => Convert.ToDouble(x.Protein));
+            }
+
+            if (food.DayOfWeek == DayOfWeekEnum.Thursday)
+            {
+                sundayPlan.Remove(food);
+                FatSuminthursday = thursdayPlan.Sum(x => Convert.ToDouble(x.Fat));
+                CarbohydratesThursday = thursdayPlan.Sum(x => Convert.ToDouble(x.Carbohydrates));
+                CaloriesSumThursday = thursdayPlan.Sum(x => Convert.ToDouble(x.Calories));
+                ProteinSumThursday = thursdayPlan.Sum(x => Convert.ToDouble(x.Protein));
+            }
+
+            if (food.DayOfWeek == DayOfWeekEnum.Friday)
+            {
+                sundayPlan.Remove(food);
+                FatSumInFriday = fridayPlan.Sum(x => Convert.ToDouble(x.Fat));
+                CarbohydratesFriday = fridayPlan.Sum(x => Convert.ToDouble(x.Carbohydrates));
+                CaloriesSumFriday = fridayPlan.Sum(x => Convert.ToDouble(x.Calories));
+                ProteinSumFriday = fridayPlan.Sum(x => Convert.ToDouble(x.Protein));
+
+            }
+
+            if (food.DayOfWeek == DayOfWeekEnum.Saturday)
+            {
+                sundayPlan.Remove(food);
+                FatSumInSaturday = fridayPlan.Sum(x => Convert.ToDouble(x.Fat));
+                CarbohydratesSaturday = fridayPlan.Sum(x => Convert.ToDouble(x.Carbohydrates));
+                CaloriesSumSaturday = fridayPlan.Sum(x => Convert.ToDouble(x.Calories));
+                ProteinSumSaturday = fridayPlan.Sum(x => Convert.ToDouble(x.Protein));
+
+            }
+
+            if (food.DayOfWeek == DayOfWeekEnum.Sunday)
+            {
+                sundayPlan.Remove(food);
+                FatSumInSunday = sundayPlan.Sum(x => Convert.ToDouble(x.Fat));
+                CarbohydratesSunday = sundayPlan.Sum(x => Convert.ToDouble(x.Carbohydrates));
+                CaloriesSumSunday = sundayPlan.Sum(x => Convert.ToDouble(x.Calories));
+                ProteinSumSunday = sundayPlan.Sum(x => Convert.ToDouble(x.Protein));
+            }
+
+
+            food.DayOfWeek = DayOfWeekEnum.None;
+            await Http.PutAsJsonAsync("Food", food);
+            toastService.ShowSuccess("Lebensmittel erfolgreich entfernt");
+
+        }
+    }
+}
