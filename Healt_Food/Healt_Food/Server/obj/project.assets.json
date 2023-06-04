@@ -67,6 +67,26 @@
           "buildMultiTargeting/Blazored.Modal.props": {}
         }
       },
+      "Blazored.Toast/4.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.AspNetCore.Components.Web": "7.0.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
+        },
+        "compile": {
+          "lib/net7.0/Blazored.Toast.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/Blazored.Toast.dll": {}
+        },
+        "build": {
+          "buildTransitive/Blazored.Toast.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Blazored.Toast.props": {}
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -1477,6 +1497,7 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "Blazored.Modal": "7.1.0",
+          "Blazored.Toast": "4.1.0",
           "Healt_Food.Shared": "1.0.0",
           "Microsoft.AspNetCore.Components.WebAssembly": "7.0.5"
         },
@@ -1555,6 +1576,25 @@
         "lib/net6.0/Blazored.Modal.dll",
         "staticwebassets/Blazored.Modal.bundle.scp.css",
         "staticwebassets/BlazoredModal.razor.js"
+      ]
+    },
+    "Blazored.Toast/4.1.0": {
+      "sha512": "k12tFBnMMU67bPoBKLTuR2POcYOz02UtT8Lzyeu8fMv587nO8VaWqFfRMJ8Hxkb1SbxL8lY2WiK9tWAZ934khQ==",
+      "type": "package",
+      "path": "blazored.toast/4.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "blazored.toast.4.1.0.nupkg.sha512",
+        "blazored.toast.nuspec",
+        "build/Blazored.Toast.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/Blazored.Toast.props",
+        "buildTransitive/Blazored.Toast.props",
+        "icon.png",
+        "lib/net6.0/Blazored.Toast.dll",
+        "lib/net7.0/Blazored.Toast.dll",
+        "staticwebassets/Blazored.Toast.bundle.scp.css"
       ]
     },
     "Humanizer.Core/2.14.1": {
@@ -4253,11 +4293,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Server\\Healt_Food.Server.csproj",
+      "projectUniqueName": "D:\\develop\\dev4you\\Health_Eat\\Healt_Food\\Healt_Food\\Server\\Healt_Food.Server.csproj",
       "projectName": "Healt_Food.Server",
-      "projectPath": "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Server\\Healt_Food.Server.csproj",
+      "projectPath": "D:\\develop\\dev4you\\Health_Eat\\Healt_Food\\Healt_Food\\Server\\Healt_Food.Server.csproj",
       "packagesPath": "C:\\Users\\Viacheslav\\.nuget\\packages\\",
-      "outputPath": "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Server\\obj\\",
+      "outputPath": "D:\\develop\\dev4you\\Health_Eat\\Healt_Food\\Healt_Food\\Server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program file\\Visual Studi Shared\\NuGetPackages"
@@ -4280,11 +4320,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Client\\Healt_Food.Client.csproj": {
-              "projectPath": "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Client\\Healt_Food.Client.csproj"
+            "D:\\develop\\dev4you\\Health_Eat\\Healt_Food\\Healt_Food\\Client\\Healt_Food.Client.csproj": {
+              "projectPath": "D:\\develop\\dev4you\\Health_Eat\\Healt_Food\\Healt_Food\\Client\\Healt_Food.Client.csproj"
             },
-            "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Shared\\Healt_Food.Shared.csproj": {
-              "projectPath": "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Shared\\Healt_Food.Shared.csproj"
+            "D:\\develop\\dev4you\\Health_Eat\\Healt_Food\\Healt_Food\\Shared\\Healt_Food.Shared.csproj": {
+              "projectPath": "D:\\develop\\dev4you\\Health_Eat\\Healt_Food\\Healt_Food\\Shared\\Healt_Food.Shared.csproj"
             }
           }
         }

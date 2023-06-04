@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Shared\\Healt_Food.Shared.csproj",
+      "projectUniqueName": "D:\\develop\\dev4you\\Health_Eat\\Healt_Food\\Healt_Food\\Shared\\Healt_Food.Shared.csproj",
       "projectName": "Healt_Food.Shared",
-      "projectPath": "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Shared\\Healt_Food.Shared.csproj",
+      "projectPath": "D:\\develop\\dev4you\\Health_Eat\\Healt_Food\\Healt_Food\\Shared\\Healt_Food.Shared.csproj",
       "packagesPath": "C:\\Users\\Viacheslav\\.nuget\\packages\\",
-      "outputPath": "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Shared\\obj\\",
+      "outputPath": "D:\\develop\\dev4you\\Health_Eat\\Healt_Food\\Healt_Food\\Shared\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program file\\Visual Studi Shared\\NuGetPackages"

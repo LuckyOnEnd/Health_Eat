@@ -2,8 +2,10 @@
 
 @inject HttpClient Http
 @inject IModalService _modalService
-@inject FoodViewModel model 
+@inject FoodViewModel model
+@inject IToastService toastService
 
+@using Blazored.Modal.Services;
 @using Healt_Food.Client.Components;
 @using Healt_Food.Client.ViewModel;
 @using Healt_Food.Shared.Entites;
@@ -25,7 +27,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach(var food in foods)
+                    @foreach (var food in foods)
                     {
                         <tr>
                             <th scope="row">@food.Name</th>
@@ -65,9 +67,20 @@
 
     private async Task AddToFavorite(Food food)
     {
-        //check
-        food.Favorite = true;
-        await Http.PutAsJsonAsync("Food", food);
+
+        if (food.Favorite == true)
+        {
+            toastService.ShowError("Das Essen wurde bereits zur Favoritenliste hinzugefügt");
+        }
+        else
+        {
+            food.Favorite = true;
+            await Http.PutAsJsonAsync("Food", food);
+            toastService.ShowSuccess("erfolgreich zu den Favoriten hinzugefügt");
+
+        }
+
+
     }
 
     private async Task AddFoodToWeekly(Food food)

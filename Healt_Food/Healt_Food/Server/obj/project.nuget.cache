@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "5j60zlC8aZpUVY1MtgDgM9eQZ5d6ka+NBHWRMfdCUSWLGwnWfNTMTdLGYlPjDI3fORn/2pGec0pqhveQ78D1Uw==",
+  "dgSpecHash": "nfhsqMhjMqZYyOwxfDufZocnEJsyoHlqleU0JXEgiIgWbN1iy5q3Z+CSy38xJXlmBYEMAS5kOCXGXj5hW8BWEQ==",
   "success": true,
-  "projectFilePath": "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Server\\Healt_Food.Server.csproj",
+  "projectFilePath": "D:\\develop\\dev4you\\Health_Eat\\Healt_Food\\Healt_Food\\Server\\Healt_Food.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Viacheslav\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Viacheslav\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\Viacheslav\\.nuget\\packages\\blazored.modal\\7.1.0\\blazored.modal.7.1.0.nupkg.sha512",
+    "C:\\Users\\Viacheslav\\.nuget\\packages\\blazored.toast\\4.1.0\\blazored.toast.4.1.0.nupkg.sha512",
     "C:\\Users\\Viacheslav\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Viacheslav\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.5\\microsoft.aspnetcore.authorization.7.0.5.nupkg.sha512",
     "C:\\Users\\Viacheslav\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.5\\microsoft.aspnetcore.components.7.0.5.nupkg.sha512",

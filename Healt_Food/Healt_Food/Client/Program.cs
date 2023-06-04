@@ -1,4 +1,5 @@
 using Blazored.Modal;
+using Blazored.Toast;
 using Healt_Food.Client;
 using Healt_Food.Client.ViewModel;
 using Microsoft.AspNetCore.Components.Web;
@@ -16,6 +17,7 @@ namespace Healt_Food.Client
 
             builder.Services.AddBlazoredModal();
             builder.Services.AddScoped<FoodViewModel>();
+            builder.Services.AddBlazoredToast();
             builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 
             await builder.Build().RunAsync();

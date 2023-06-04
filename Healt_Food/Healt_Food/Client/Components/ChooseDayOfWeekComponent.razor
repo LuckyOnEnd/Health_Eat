@@ -1,27 +1,38 @@
 ﻿@using Healt_Food.Client.ViewModel;
 @using Healt_Food.Shared.Entites;
 @using Healt_Food.Shared.Enums;
+@using Blazored.Modal.Services;
 
+@inject IToastService toastService
 @inject HttpClient Http
 @inject FoodViewModel model
 
-<InputSelect @bind-Value="dayOfWeek">
+<InputSelect class="form-select" @bind-Value="dayOfWeek">
+
     @foreach (var day in Enum.GetValues(typeof(DayOfWeekEnum)))
     {
         <option>@day</option>
     }
 </InputSelect>
 
-<button @onclick="() => AddToWeeklyPlan()">Choose</button>
+<button class="btn btn-primary mt-2" @onclick="() => AddToWeeklyPlan()">Choose</button>
 @code {
     public Food food { get; set; }
     private DayOfWeekEnum dayOfWeek;
 
-    private async Task AddToWeeklyPlan ()
+    private async Task AddToWeeklyPlan()
     {
-        //check
         Food food = model._food;
-        food.DayOfWeek = dayOfWeek;
-        await Http.PutAsJsonAsync("Food", food);
+
+        if (food.DayOfWeek == dayOfWeek)
+        {
+            toastService.ShowError("erfolgreich zum Sonntagsplan hinzugefügt ");
+        }
+        else
+        {
+            food.DayOfWeek = dayOfWeek;
+            await Http.PutAsJsonAsync("Food", food);
+            toastService.ShowSuccess("steht schon im Sonntagsplan ");
+        }
     }
 }

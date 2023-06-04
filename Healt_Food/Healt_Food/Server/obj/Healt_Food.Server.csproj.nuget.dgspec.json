@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Server\\Healt_Food.Server.csproj": {}
+    "D:\\develop\\dev4you\\Health_Eat\\Healt_Food\\Healt_Food\\Server\\Healt_Food.Server.csproj": {}
   },
   "projects": {
-    "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Client\\Healt_Food.Client.csproj": {
+    "D:\\develop\\dev4you\\Health_Eat\\Healt_Food\\Healt_Food\\Client\\Healt_Food.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Client\\Healt_Food.Client.csproj",
+        "projectUniqueName": "D:\\develop\\dev4you\\Health_Eat\\Healt_Food\\Healt_Food\\Client\\Healt_Food.Client.csproj",
         "projectName": "Healt_Food.Client",
-        "projectPath": "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Client\\Healt_Food.Client.csproj",
+        "projectPath": "D:\\develop\\dev4you\\Health_Eat\\Healt_Food\\Healt_Food\\Client\\Healt_Food.Client.csproj",
         "packagesPath": "C:\\Users\\Viacheslav\\.nuget\\packages\\",
-        "outputPath": "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Client\\obj\\",
+        "outputPath": "D:\\develop\\dev4you\\Health_Eat\\Healt_Food\\Healt_Food\\Client\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program file\\Visual Studi Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Shared\\Healt_Food.Shared.csproj": {
-                "projectPath": "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Shared\\Healt_Food.Shared.csproj"
+              "D:\\develop\\dev4you\\Health_Eat\\Healt_Food\\Healt_Food\\Shared\\Healt_Food.Shared.csproj": {
+                "projectPath": "D:\\develop\\dev4you\\Health_Eat\\Healt_Food\\Healt_Food\\Shared\\Healt_Food.Shared.csproj"
               }
             }
           }
@@ -52,6 +52,10 @@
             "Blazored.Modal": {
               "target": "Package",
               "version": "[7.1.0, )"
+            },
+            "Blazored.Toast": {
+              "target": "Package",
+              "version": "[4.1.0, )"
             },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
@@ -94,14 +98,14 @@
         }
       }
     },
-    "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Server\\Healt_Food.Server.csproj": {
+    "D:\\develop\\dev4you\\Health_Eat\\Healt_Food\\Healt_Food\\Server\\Healt_Food.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Server\\Healt_Food.Server.csproj",
+        "projectUniqueName": "D:\\develop\\dev4you\\Health_Eat\\Healt_Food\\Healt_Food\\Server\\Healt_Food.Server.csproj",
         "projectName": "Healt_Food.Server",
-        "projectPath": "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Server\\Healt_Food.Server.csproj",
+        "projectPath": "D:\\develop\\dev4you\\Health_Eat\\Healt_Food\\Healt_Food\\Server\\Healt_Food.Server.csproj",
         "packagesPath": "C:\\Users\\Viacheslav\\.nuget\\packages\\",
-        "outputPath": "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Server\\obj\\",
+        "outputPath": "D:\\develop\\dev4you\\Health_Eat\\Healt_Food\\Healt_Food\\Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program file\\Visual Studi Shared\\NuGetPackages"
@@ -124,11 +128,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Client\\Healt_Food.Client.csproj": {
-                "projectPath": "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Client\\Healt_Food.Client.csproj"
+              "D:\\develop\\dev4you\\Health_Eat\\Healt_Food\\Healt_Food\\Client\\Healt_Food.Client.csproj": {
+                "projectPath": "D:\\develop\\dev4you\\Health_Eat\\Healt_Food\\Healt_Food\\Client\\Healt_Food.Client.csproj"
               },
-              "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Shared\\Healt_Food.Shared.csproj": {
-                "projectPath": "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Shared\\Healt_Food.Shared.csproj"
+              "D:\\develop\\dev4you\\Health_Eat\\Healt_Food\\Healt_Food\\Shared\\Healt_Food.Shared.csproj": {
+                "projectPath": "D:\\develop\\dev4you\\Health_Eat\\Healt_Food\\Healt_Food\\Shared\\Healt_Food.Shared.csproj"
               }
             }
           }
@@ -185,14 +189,14 @@
         }
       }
     },
-    "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Shared\\Healt_Food.Shared.csproj": {
+    "D:\\develop\\dev4you\\Health_Eat\\Healt_Food\\Healt_Food\\Shared\\Healt_Food.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Shared\\Healt_Food.Shared.csproj",
+        "projectUniqueName": "D:\\develop\\dev4you\\Health_Eat\\Healt_Food\\Healt_Food\\Shared\\Healt_Food.Shared.csproj",
         "projectName": "Healt_Food.Shared",
-        "projectPath": "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Shared\\Healt_Food.Shared.csproj",
+        "projectPath": "D:\\develop\\dev4you\\Health_Eat\\Healt_Food\\Healt_Food\\Shared\\Healt_Food.Shared.csproj",
         "packagesPath": "C:\\Users\\Viacheslav\\.nuget\\packages\\",
-        "outputPath": "D:\\develop\\freelance\\Health_Eat\\Healt_Food\\Healt_Food\\Shared\\obj\\",
+        "outputPath": "D:\\develop\\dev4you\\Health_Eat\\Healt_Food\\Healt_Food\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program file\\Visual Studi Shared\\NuGetPackages"
