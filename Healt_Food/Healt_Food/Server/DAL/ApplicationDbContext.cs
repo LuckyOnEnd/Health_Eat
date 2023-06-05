@@ -22,7 +22,12 @@ namespace Healt_Food.Server.DAL
                     Protein = 31,
                     Calories = 147,
                     Favorite = false,
-                    DayOfWeek = DayOfWeekEnum.None,
+                    InMonday = false,
+                    InTuesday = false,
+                    InWednesday = false,
+                    InThursday = false,
+                    InFriday = false,
+                    InSaturday = false,
                 },
                 new Food()
                 {
@@ -33,7 +38,12 @@ namespace Healt_Food.Server.DAL
                     Protein = 2.8,
                     Calories = 31,
                     Favorite = false,
-                    DayOfWeek = DayOfWeekEnum.None,
+                    InMonday = false,
+                    InTuesday = false,
+                    InWednesday = false,
+                    InThursday = false,
+                    InFriday = false,
+                    InSaturday = false,
                 },
                 new Food()
                 {
@@ -44,7 +54,12 @@ namespace Healt_Food.Server.DAL
                     Protein = 13,
                     Calories = 389,
                     Favorite = false,
-                    DayOfWeek = DayOfWeekEnum.None,
+                    InMonday = false,
+                    InTuesday = false,
+                    InWednesday = false,
+                    InThursday = false,
+                    InFriday = false,
+                    InSaturday = false,
                 },
                 new Food()
                 {
@@ -55,7 +70,12 @@ namespace Healt_Food.Server.DAL
                     Protein = 20.4,
                     Calories = 206,
                     Favorite = false,
-                    DayOfWeek = DayOfWeekEnum.None,
+                    InMonday = false,
+                    InTuesday = false,
+                    InWednesday = false,
+                    InThursday = false,
+                    InFriday = false,
+                    InSaturday = false,
                 },
                 new Food()
                 {
@@ -66,7 +86,12 @@ namespace Healt_Food.Server.DAL
                     Protein = 14,
                     Calories = 368,
                     Favorite = false,
-                    DayOfWeek = DayOfWeekEnum.None,
+                    InMonday = false,
+                    InTuesday = false,
+                    InWednesday = false,
+                    InThursday = false,
+                    InFriday = false,
+                    InSaturday = false,
                 },
                 new Food()
                 {
@@ -77,7 +102,12 @@ namespace Healt_Food.Server.DAL
                     Protein = 21,
                     Calories = 576,
                     Favorite = false,
-                    DayOfWeek = DayOfWeekEnum.None,
+                    InMonday = false,
+                    InTuesday = false,
+                    InWednesday = false,
+                    InThursday = false,
+                    InFriday = false,
+                    InSaturday = false,
                 },
                 new Food()
                 {
@@ -88,7 +118,12 @@ namespace Healt_Food.Server.DAL
                     Protein = 1.1,
                     Calories = 96,
                     Favorite = false,
-                    DayOfWeek = DayOfWeekEnum.None,
+                    InMonday = false,
+                    InTuesday = false,
+                    InWednesday = false,
+                    InThursday = false,
+                    InFriday = false,
+                    InSaturday = false,
                 },
                 new Food()
                 {
@@ -99,7 +134,13 @@ namespace Healt_Food.Server.DAL
                     Protein = 3.3,
                     Calories = 62,
                     Favorite = false,
-                    DayOfWeek = DayOfWeekEnum.None,
+                    InMonday = false,
+                    InTuesday = false,
+                    InWednesday = false,
+                    InThursday  = false,
+                    InFriday = false,
+                    InSaturday = false,
+                    InSunday = false,
                 },
                 new Food()
                 {
@@ -110,7 +151,12 @@ namespace Healt_Food.Server.DAL
                     Protein = 26.4,
                     Calories = 252,
                     Favorite = false,
-                    DayOfWeek = DayOfWeekEnum.None,
+                    InMonday = false,
+                    InTuesday = false,
+                    InWednesday = false,
+                    InThursday = false,
+                    InFriday = false,
+                    InSaturday = false,
                 },
                 new Food()
                 {
@@ -121,7 +167,12 @@ namespace Healt_Food.Server.DAL
                     Protein = 1.6,
                     Calories = 86,
                     Favorite = false,
-                    DayOfWeek = DayOfWeekEnum.None,
+                    InMonday = false,
+                    InTuesday = false,
+                    InWednesday = false,
+                    InThursday = false,
+                    InFriday = false,
+                    InSaturday = false,
                 },
                 new Food()
                 {
@@ -132,7 +183,12 @@ namespace Healt_Food.Server.DAL
                     Protein = 9.3,
                     Calories = 145,
                     Favorite = false,
-                    DayOfWeek = DayOfWeekEnum.None,
+                    InMonday = false,
+                    InTuesday = false,
+                    InWednesday = false,
+                    InThursday = false,
+                    InFriday = false,
+                    InSaturday = false,
                 },
                 new Food()
                 {
@@ -143,7 +199,12 @@ namespace Healt_Food.Server.DAL
                     Protein = 2.9,
                     Calories = 23,
                     Favorite = false,
-                    DayOfWeek = DayOfWeekEnum.None,
+                    InMonday = false,
+                    InTuesday = false,
+                    InWednesday = false,
+                    InThursday = false,
+                    InFriday = false,
+                    InSaturday = false,
                 },
                 new Food()
                 {
@@ -154,7 +215,12 @@ namespace Healt_Food.Server.DAL
                     Protein = 6,
                     Calories = 72,
                     Favorite = false,
-                    DayOfWeek = DayOfWeekEnum.None,
+                    InMonday = false,
+                    InTuesday = false,
+                    InWednesday = false,
+                    InThursday = false,
+                    InFriday = false,
+                    InSaturday = false,
                 },
                 new Food()
                 {
@@ -165,7 +231,12 @@ namespace Healt_Food.Server.DAL
                     Protein = 8.7,
                     Calories = 127,
                     Favorite = false,
-                    DayOfWeek = DayOfWeekEnum.None,
+                    InMonday = false,
+                    InTuesday = false,
+                    InWednesday = false,
+                    InThursday = false,
+                    InFriday = false,
+                    InSaturday = false,
                 },
                 new Food()
                 {
@@ -176,7 +247,12 @@ namespace Healt_Food.Server.DAL
                     Protein = 2,
                     Calories = 160,
                     Favorite = false,
-                    DayOfWeek = DayOfWeekEnum.None,
+                    InMonday = false,
+                    InTuesday = false,
+                    InWednesday = false,
+                    InThursday = false,
+                    InFriday = false,
+                    InSaturday = false,
                 }
                 );
         }

@@ -15,6 +15,5 @@ namespace Healt_Food.Shared.Enums
         Thursday = 4,
         Friday = 5,
         Saturday = 6,
-        None = 7,
     }
 }

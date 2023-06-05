@@ -37,7 +37,7 @@
                                             <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
                                         </svg>
                                     </button>
-                                    <button @onclick="()=>RemoveFromWeakly(food)" type="button" class="btn btn-outline-primary" style="font-size: 10px;">
+                                    <button @onclick="()=>RemoveFromWeakly(food, DayOfWeekEnum.Monday)" type="button" class="btn btn-outline-primary" style="font-size: 10px;">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
                                             <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z" />
                                         </svg>
@@ -92,7 +92,7 @@
                                                 <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
                                             </svg>
                                         </button>
-                                        <button @onclick="()=>RemoveFromWeakly(food)" type="button" class="btn btn-outline-primary" style="font-size: 10px;">
+                                        <button @onclick="()=>RemoveFromWeakly(food, DayOfWeekEnum.Tuesday)" type="button" class="btn btn-outline-primary" style="font-size: 10px;">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
                                                 <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z" />
                                             </svg>
@@ -148,7 +148,7 @@
                                                 <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
                                             </svg>
                                         </button>
-                                        <button @onclick="()=>RemoveFromWeakly(food)" type="button" class="btn btn-outline-primary" style="font-size: 10px;">
+                                        <button @onclick="()=>RemoveFromWeakly(food, DayOfWeekEnum.Wednesday)" type="button" class="btn btn-outline-primary" style="font-size: 10px;">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
                                                 <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z" />
                                             </svg>
@@ -204,7 +204,7 @@
                                                 <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
                                             </svg>
                                         </button>
-                                        <button @onclick="()=>RemoveFromWeakly(food)" type="button" class="btn btn-outline-primary" style="font-size: 10px;">
+                                        <button @onclick="()=>RemoveFromWeakly(food, DayOfWeekEnum.Thursday)" type="button" class="btn btn-outline-primary" style="font-size: 10px;">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
                                                 <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z" />
                                             </svg>
@@ -260,7 +260,7 @@
                                                 <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
                                             </svg>
                                         </button>
-                                        <button @onclick="()=>RemoveFromWeakly(food)" type="button" class="btn btn-outline-primary" style="font-size: 10px;">
+                                        <button @onclick="()=>RemoveFromWeakly(food, DayOfWeekEnum.Friday)" type="button" class="btn btn-outline-primary" style="font-size: 10px;">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
                                                 <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z" />
                                             </svg>
@@ -316,7 +316,7 @@
                                                 <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
                                             </svg>
                                         </button>
-                                        <button @onclick="()=>RemoveFromWeakly(food)" type="button" class="btn btn-outline-primary" style="font-size: 10px;">
+                                        <button @onclick="()=>RemoveFromWeakly(food, DayOfWeekEnum.Saturday)" type="button" class="btn btn-outline-primary" style="font-size: 10px;">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
                                                 <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z" />
                                             </svg>
@@ -372,7 +372,7 @@
                                                 <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
                                             </svg>
                                         </button>
-                                        <button @onclick="()=>RemoveFromWeakly(food)" type="button" class="btn btn-outline-primary" style="font-size: 10px;">
+                                        <button @onclick="()=>RemoveFromWeakly(food, DayOfWeekEnum.Sunday)" type="button" class="btn btn-outline-primary" style="font-size: 10px;">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
                                                 <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z" />
                                             </svg>
@@ -446,49 +446,49 @@
     {
         foods = await Http.GetFromJsonAsync<List<Food>>("Food");
 
-        mondayPlan = foods.Where(x => x.DayOfWeek == DayOfWeekEnum.Monday).ToList();
+        mondayPlan = foods.Where(x => x.InMonday).ToList();
 
         FatSumInMonday = mondayPlan.Sum(x => Convert.ToDouble(x.Fat));
         CarbohydratesMonday = mondayPlan.Sum(x => Convert.ToDouble(x.Carbohydrates));
         CaloriesSumMonday = mondayPlan.Sum(x => Convert.ToDouble(x.Calories));
         ProteinSumMonday = mondayPlan.Sum(x => Convert.ToDouble(x.Protein));
 
-        tuesdayPlan = foods.Where(x => x.DayOfWeek == DayOfWeekEnum.Tuesday).ToList();
+        tuesdayPlan = foods.Where(x => x.InTuesday).ToList();
 
         FatSumInTuesday = tuesdayPlan.Sum(x => Convert.ToDouble(x.Fat));
         CarbohydratesTuesday = tuesdayPlan.Sum(x => Convert.ToDouble(x.Carbohydrates));
         CaloriesSumTuesday = tuesdayPlan.Sum(x => Convert.ToDouble(x.Calories));
         ProteinSumTuesday = tuesdayPlan.Sum(x => Convert.ToDouble(x.Protein));
 
-        wednesdayPlan = foods.Where(x => x.DayOfWeek == DayOfWeekEnum.Wednesday).ToList();
+        wednesdayPlan = foods.Where(x => x.InWednesday).ToList();
 
         FatSumInWednesday = wednesdayPlan.Sum(x => Convert.ToDouble(x.Fat));
         CarbohydratesWednesday = wednesdayPlan.Sum(x => Convert.ToDouble(x.Carbohydrates));
         CaloriesSumWednesday = wednesdayPlan.Sum(x => Convert.ToDouble(x.Calories));
         ProteinSumWednesday = wednesdayPlan.Sum(x => Convert.ToDouble(x.Protein));
 
-        thursdayPlan = foods.Where(x => x.DayOfWeek == DayOfWeekEnum.Thursday).ToList();
+        thursdayPlan = foods.Where(x => x.InThursday).ToList();
 
         FatSumInThursday = thursdayPlan.Sum(x => Convert.ToDouble(x.Fat));
         CarbohydratesThursday = thursdayPlan.Sum(x => Convert.ToDouble(x.Carbohydrates));
         CaloriesSumThursday = thursdayPlan.Sum(x => Convert.ToDouble(x.Calories));
         ProteinSumThursday = thursdayPlan.Sum(x => Convert.ToDouble(x.Protein));
 
-        fridayPlan = foods.Where(x => x.DayOfWeek == DayOfWeekEnum.Friday).ToList();
+        fridayPlan = foods.Where(x => x.InFriday).ToList();
 
         FatSumInFriday = fridayPlan.Sum(x => Convert.ToDouble(x.Fat));
         CarbohydratesFriday = fridayPlan.Sum(x => Convert.ToDouble(x.Carbohydrates));
         CaloriesSumFriday = fridayPlan.Sum(x => Convert.ToDouble(x.Calories));
         ProteinSumFriday = fridayPlan.Sum(x => Convert.ToDouble(x.Protein));
 
-        saturdayPlan = foods.Where(x => x.DayOfWeek == DayOfWeekEnum.Saturday).ToList();
+        saturdayPlan = foods.Where(x => x.InSaturday).ToList();
 
         FatSumInSaturday = saturdayPlan.Sum(x => Convert.ToDouble(x.Fat));
         CarbohydratesSaturday = saturdayPlan.Sum(x => Convert.ToDouble(x.Carbohydrates));
         CaloriesSumSaturday = saturdayPlan.Sum(x => Convert.ToDouble(x.Calories));
         ProteinSumSaturday = saturdayPlan.Sum(x => Convert.ToDouble(x.Protein));
 
-        sundayPlan = foods.Where(x => x.DayOfWeek == DayOfWeekEnum.Sunday).ToList();
+        sundayPlan = foods.Where(x => x.InSunday).ToList();
 
         FatSumInSunday = sundayPlan.Sum(x => Convert.ToDouble(x.Fat));
         CarbohydratesSunday = sundayPlan.Sum(x => Convert.ToDouble(x.Carbohydrates));
@@ -498,8 +498,6 @@
 
     private async Task AddToFavorite(Food food)
     {
-
-
         if (food.Favorite == true)
         {
             toastService.ShowError("Das Essen wurde bereits zur Favoritenliste hinzugefügt");
@@ -513,9 +511,9 @@
         }
     }
 
-    private async Task RemoveFromWeakly(Food food)
+    private async Task RemoveFromWeakly(Food food, DayOfWeekEnum day)
     {
-        if (food.DayOfWeek == DayOfWeekEnum.Monday)
+        if (food.InMonday && day == DayOfWeekEnum.Monday)
         {
             mondayPlan.Remove(food);
             FatSumInMonday = mondayPlan.Sum(x => Convert.ToDouble(x.Fat));
@@ -524,7 +522,7 @@
             ProteinSumMonday = mondayPlan.Sum(x => Convert.ToDouble(x.Protein));
         }
 
-        if (food.DayOfWeek == DayOfWeekEnum.Tuesday)
+        if (food.InTuesday && day == DayOfWeekEnum.Tuesday)
         {
             tuesdayPlan.Remove(food);
             FatSumInTuesday = tuesdayPlan.Sum(x => Convert.ToDouble(x.Fat));
@@ -533,7 +531,7 @@
             ProteinSumTuesday = tuesdayPlan.Sum(x => Convert.ToDouble(x.Protein));
         }
 
-        if (food.DayOfWeek == DayOfWeekEnum.Wednesday)
+        if (food.InWednesday && day == DayOfWeekEnum.Wednesday)
         {
             wednesdayPlan.Remove(food);
             FatSumInWednesday = wednesdayPlan.Sum(x => Convert.ToDouble(x.Fat));
@@ -542,7 +540,7 @@
             ProteinSumWednesday = wednesdayPlan.Sum(x => Convert.ToDouble(x.Protein));
         }
 
-        if (food.DayOfWeek == DayOfWeekEnum.Thursday)
+        if (food.InThursday && day == DayOfWeekEnum.Thursday)
         {
             thursdayPlan.Remove(food);
             FatSumInThursday = thursdayPlan.Sum(x => Convert.ToDouble(x.Fat));
@@ -551,7 +549,7 @@
             ProteinSumThursday = thursdayPlan.Sum(x => Convert.ToDouble(x.Protein));
         }
 
-        if (food.DayOfWeek == DayOfWeekEnum.Friday)
+        if (food.InFriday && day == DayOfWeekEnum.Friday)
         {
             fridayPlan.Remove(food);
             FatSumInFriday = fridayPlan.Sum(x => Convert.ToDouble(x.Fat));
@@ -561,7 +559,7 @@
 
         }
 
-        if (food.DayOfWeek == DayOfWeekEnum.Saturday)
+        if (food.InSaturday && day == DayOfWeekEnum.Saturday)
         {
             saturdayPlan.Remove(food);
             FatSumInSaturday = saturdayPlan.Sum(x => Convert.ToDouble(x.Fat));
@@ -571,7 +569,7 @@
 
         }
 
-        if (food.DayOfWeek == DayOfWeekEnum.Sunday)
+        if (food.InSunday && day == DayOfWeekEnum.Sunday)
         {
             sundayPlan.Remove(food);
             FatSumInSunday = sundayPlan.Sum(x => Convert.ToDouble(x.Fat));
@@ -580,8 +578,20 @@
             ProteinSumSunday = sundayPlan.Sum(x => Convert.ToDouble(x.Protein));
         }
 
-
-        food.DayOfWeek = DayOfWeekEnum.None;
+        if(day == DayOfWeekEnum.Monday)
+            food.InMonday = false;
+        if(day == DayOfWeekEnum.Tuesday)
+            food.InTuesday = false;
+        if (day == DayOfWeekEnum.Wednesday)
+            food.InWednesday = false;
+        if (day == DayOfWeekEnum.Thursday)
+            food.InThursday = false;
+        if (day == DayOfWeekEnum.Friday)
+            food.InFriday = false;
+        if(day == DayOfWeekEnum.Saturday)
+            food.InSaturday = false;
+        if (day == DayOfWeekEnum.Sunday)
+            food.InSunday = false;
         await Http.PutAsJsonAsync("Food", food);
         toastService.ShowSuccess("Lebensmittel erfolgreich entfernt");
 

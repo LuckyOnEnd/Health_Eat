@@ -15,22 +15,75 @@
     }
 </InputSelect>
 
-<button class="btn btn-primary mt-2" @onclick="() => AddToWeeklyPlan()">Choose</button>
+<button class="btn btn-primary mt-2" @onclick="() => AddToWeek()">Choose</button>
 @code {
     public Food food { get; set; }
     private DayOfWeekEnum dayOfWeek;
 
-    private async Task AddToWeeklyPlan()
+    private bool AddToWeeklyPlan()
     {
         Food food = model._food;
 
-        if (food.DayOfWeek == dayOfWeek)
+        if (food.InMonday && dayOfWeek == DayOfWeekEnum.Monday)
         {
             toastService.ShowError("erfolgreich zum Sonntagsplan hinzugefügt ");
+            return false;
         }
-        else
+        if (food.InTuesday && dayOfWeek == DayOfWeekEnum.Tuesday)
         {
-            food.DayOfWeek = dayOfWeek;
+            toastService.ShowError("erfolgreich zum Sonntagsplan hinzugefügt ");
+            return false;
+        }
+        if (food.InWednesday && dayOfWeek == DayOfWeekEnum.Wednesday)
+        {
+            toastService.ShowError("erfolgreich zum Sonntagsplan hinzugefügt ");
+            return false;
+        }
+        if (food.InThursday && dayOfWeek == DayOfWeekEnum.Thursday)
+        {
+            toastService.ShowError("erfolgreich zum Sonntagsplan hinzugefügt ");
+            return false;
+        }
+        if (food.InFriday && dayOfWeek == DayOfWeekEnum.Friday)
+        {
+            toastService.ShowError("erfolgreich zum Sonntagsplan hinzugefügt ");
+            return false;
+        }
+        if (food.InSaturday && dayOfWeek == DayOfWeekEnum.Saturday)
+        {
+            toastService.ShowError("erfolgreich zum Sonntagsplan hinzugefügt ");
+            return false;
+        }
+        if (food.InSunday && dayOfWeek == DayOfWeekEnum.Sunday)
+        {
+            toastService.ShowError("erfolgreich zum Sonntagsplan hinzugefügt ");
+            return false;
+        }
+
+        return true;
+    }
+
+    private async Task AddToWeek()
+    {
+        Food food = model._food;
+        if (AddToWeeklyPlan())
+        {
+            if (dayOfWeek == DayOfWeekEnum.Monday)
+                food.InMonday = true;
+            if (dayOfWeek == DayOfWeekEnum.Tuesday)
+                food.InTuesday = true;
+            if (dayOfWeek == DayOfWeekEnum.Wednesday)
+                food.InWednesday = true;
+            if (dayOfWeek == DayOfWeekEnum.Thursday)
+                food.InThursday = true;
+            if (dayOfWeek == DayOfWeekEnum.Friday)
+                food.InFriday = true;
+            if (dayOfWeek == DayOfWeekEnum.Saturday)
+                food.InSaturday = true;
+            if (dayOfWeek == DayOfWeekEnum.Sunday)
+                food.InSunday = true;
+
+            
             await Http.PutAsJsonAsync("Food", food);
             toastService.ShowSuccess("steht schon im Sonntagsplan ");
         }

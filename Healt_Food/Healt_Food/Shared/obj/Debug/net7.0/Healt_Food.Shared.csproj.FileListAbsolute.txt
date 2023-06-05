@@ -46,3 +46,15 @@ D:\develop\dev4you\Health_Eat\Healt_Food\Healt_Food\Shared\obj\Debug\net7.0\Heal
 D:\develop\dev4you\Health_Eat\Healt_Food\Healt_Food\Shared\obj\Debug\net7.0\refint\Healt_Food.Shared.dll
 D:\develop\dev4you\Health_Eat\Healt_Food\Healt_Food\Shared\obj\Debug\net7.0\Healt_Food.Shared.pdb
 D:\develop\dev4you\Health_Eat\Healt_Food\Healt_Food\Shared\obj\Debug\net7.0\ref\Healt_Food.Shared.dll
+C:\Users\km630\OneDrive\Рабочий стол\Health_Eat\Healt_Food\Healt_Food\Shared\bin\Debug\net7.0\Healt_Food.Shared.deps.json
+C:\Users\km630\OneDrive\Рабочий стол\Health_Eat\Healt_Food\Healt_Food\Shared\bin\Debug\net7.0\Healt_Food.Shared.dll
+C:\Users\km630\OneDrive\Рабочий стол\Health_Eat\Healt_Food\Healt_Food\Shared\bin\Debug\net7.0\Healt_Food.Shared.pdb
+C:\Users\km630\OneDrive\Рабочий стол\Health_Eat\Healt_Food\Healt_Food\Shared\obj\Debug\net7.0\Healt_Food.Shared.csproj.AssemblyReference.cache
+C:\Users\km630\OneDrive\Рабочий стол\Health_Eat\Healt_Food\Healt_Food\Shared\obj\Debug\net7.0\Healt_Food.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\km630\OneDrive\Рабочий стол\Health_Eat\Healt_Food\Healt_Food\Shared\obj\Debug\net7.0\Healt_Food.Shared.AssemblyInfoInputs.cache
+C:\Users\km630\OneDrive\Рабочий стол\Health_Eat\Healt_Food\Healt_Food\Shared\obj\Debug\net7.0\Healt_Food.Shared.AssemblyInfo.cs
+C:\Users\km630\OneDrive\Рабочий стол\Health_Eat\Healt_Food\Healt_Food\Shared\obj\Debug\net7.0\Healt_Food.Shared.csproj.CoreCompileInputs.cache
+C:\Users\km630\OneDrive\Рабочий стол\Health_Eat\Healt_Food\Healt_Food\Shared\obj\Debug\net7.0\Healt_Food.Shared.dll
+C:\Users\km630\OneDrive\Рабочий стол\Health_Eat\Healt_Food\Healt_Food\Shared\obj\Debug\net7.0\refint\Healt_Food.Shared.dll
+C:\Users\km630\OneDrive\Рабочий стол\Health_Eat\Healt_Food\Healt_Food\Shared\obj\Debug\net7.0\Healt_Food.Shared.pdb
+C:\Users\km630\OneDrive\Рабочий стол\Health_Eat\Healt_Food\Healt_Food\Shared\obj\Debug\net7.0\ref\Healt_Food.Shared.dll

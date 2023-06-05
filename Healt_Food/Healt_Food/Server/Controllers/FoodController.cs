@@ -38,7 +38,13 @@ namespace Healt_Food.Server.Controllers
 
             foodLast.Fat = food.Fat;
             foodLast.Favorite = food.Favorite;
-            foodLast.DayOfWeek = food.DayOfWeek;
+            foodLast.InMonday = food.InMonday;
+            foodLast.InTuesday = food.InTuesday;
+            foodLast.InWednesday = food.InWednesday;
+            foodLast.InThursday = food.InThursday;
+            foodLast.InFriday = food.InFriday;
+            foodLast.InSaturday = food.InSaturday;
+            foodLast.InSunday = food.InSunday;
             foodLast.Calories = food.Calories;
             foodLast.Carbohydrates = food.Carbohydrates;
             foodLast.Protein = food.Protein;
