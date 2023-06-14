@@ -1,0 +1,80 @@
+﻿@page "/addFood"
+
+@inject HttpClient Http
+@inject IToastService _toastService
+@inject NavigationManager nav
+
+@using Healt_Food.Shared.Entites;
+
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-title">
+                <h3 class="form-label ml-3">Essen hinzufügen</h3>
+            </div>
+            <div class="card-body">
+                <label class="form-label">Name</label>
+                <InputText @bind-Value="food.Name" class="form-control" />
+                <label class="form-label">Fett (g)</label>
+                <InputNumber @bind-Value="food.Fat" class="form-control" />
+                <label class="form-label">Kohlenhydrate (g)</label>
+                <InputNumber @bind-Value="food.Carbohydrates" class="form-control" />
+                <label class="form-label">Eiweiß (g)</label>
+                <InputNumber @bind-Value="food.Protein" class="form-control" />
+                <label class="form-label">Kalorien (kcal)</label>
+                <InputNumber @bind-Value="food.Calories" class="form-control" />
+
+                <button style=" background-color: rgba(142, 33, 244, 0.737);border-color: rgba(142, 33, 244, 0.737);color: #fff" class="btn btn-primary mt-5" @onclick="@AddFood">Add</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="card">
+            <div class="card-title">
+                <h3 class="form-label ml-3">Lebensmittel Entfernung</h3>
+            </div>
+            <div class="card-body">
+                <InputSelect class="form-select" @bind-Value="Id">
+                    @foreach(var x in foods)
+                    {
+                        <option value="@x.Id">@x.Name</option>
+                    }
+                </InputSelect>
+                <button style=" background-color: rgba(142, 33, 244, 0.737);border-color: rgba(142, 33, 244, 0.737); color: #fff" class="btn btn-primary mt-5" @onclick="() => FoodDelete(Id)">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+@code {
+    private List<Food> foods { get; set; } = new();
+    private Food food = new();
+    private int Id { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        foods = await Http.GetFromJsonAsync<List<Food>>("Food");
+    }
+
+    private async Task AddFood()
+    {
+        var result =  await Http.PostAsJsonAsync("Food/Create", food);
+
+        if (result.IsSuccessStatusCode)
+        {
+            _toastService.ShowSuccess("Lebensmittel wurden erfolgreich zur Liste hinzugefügt");
+            nav.NavigateTo("/");
+        }
+            
+    }
+
+    private async Task FoodDelete(int id)
+    {
+        var result = await Http.DeleteAsync($"Food/Delete?id={id}");
+        
+        if (result.IsSuccessStatusCode)
+        {
+            _toastService.ShowSuccess("Das Essen wurde erfolgreich aus der Liste entfernt");
+            nav.NavigateTo("/");
+        }
+    }
+}

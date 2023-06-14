@@ -2502,10 +2502,6 @@ C:\Users\km630\Source\Repos\Health_Eat\Healt_Food\Healt_Food\Client\obj\Debug\ne
 C:\Users\km630\Source\Repos\Health_Eat\Healt_Food\Healt_Food\Client\obj\Debug\net7.0\refint\Healt_Food.Client.dll
 C:\Users\km630\Source\Repos\Health_Eat\Healt_Food\Healt_Food\Client\obj\Debug\net7.0\Healt_Food.Client.pdb
 C:\Users\km630\Source\Repos\Health_Eat\Healt_Food\Healt_Food\Client\obj\Debug\net7.0\ref\Healt_Food.Client.dll
-D:\develop\freelance\Health_Eat\Healt_Food\Healt_Food\Client\obj\Debug\net7.0\build-gz\1RjdZAz3.gz
-D:\develop\freelance\Health_Eat\Healt_Food\Healt_Food\Client\obj\Debug\net7.0\build-gz\rbIfv0IY.gz
-D:\develop\freelance\Health_Eat\Healt_Food\Healt_Food\Client\obj\Debug\net7.0\build-gz\Zsvqe8aX.gz
-D:\develop\freelance\Health_Eat\Healt_Food\Healt_Food\Client\obj\Debug\net7.0\build-gz\ZEx+L+Kn.gz
 D:\develop\freelance\Health_Eat\Healt_Food\Healt_Food\Client\bin\Debug\net7.0\wwwroot\_framework\Blazored.Modal.dll
 D:\develop\freelance\Health_Eat\Healt_Food\Healt_Food\Client\bin\Debug\net7.0\wwwroot\_framework\Blazored.Modal.dll.gz
 D:\develop\freelance\Health_Eat\Healt_Food\Healt_Food\Client\bin\Debug\net7.0\Blazored.Modal.dll
@@ -4198,3 +4194,11 @@ C:\Users\km630\OneDrive\Рабочий стол\Health_Eat\Healt_Food\Healt_Food
 C:\Users\km630\OneDrive\Рабочий стол\Health_Eat\Healt_Food\Healt_Food\Client\obj\Debug\net7.0\refint\Healt_Food.Client.dll
 C:\Users\km630\OneDrive\Рабочий стол\Health_Eat\Healt_Food\Healt_Food\Client\obj\Debug\net7.0\Healt_Food.Client.pdb
 C:\Users\km630\OneDrive\Рабочий стол\Health_Eat\Healt_Food\Healt_Food\Client\obj\Debug\net7.0\ref\Healt_Food.Client.dll
+D:\develop\freelance\Health_Eat\Healt_Food\Healt_Food\Client\bin\Debug\net7.0\wwwroot\_framework\Blazored.Toast.dll
+D:\develop\freelance\Health_Eat\Healt_Food\Healt_Food\Client\bin\Debug\net7.0\wwwroot\_framework\Blazored.Toast.dll.gz
+D:\develop\freelance\Health_Eat\Healt_Food\Healt_Food\Client\bin\Debug\net7.0\Blazored.Toast.dll
+D:\develop\freelance\Health_Eat\Healt_Food\Healt_Food\Client\obj\Debug\net7.0\build-gz\MWLsJBIs.gz
+D:\develop\freelance\Health_Eat\Healt_Food\Healt_Food\Client\obj\Debug\net7.0\build-gz\1RjdZAz3.gz
+D:\develop\freelance\Health_Eat\Healt_Food\Healt_Food\Client\obj\Debug\net7.0\build-gz\rbIfv0IY.gz
+D:\develop\freelance\Health_Eat\Healt_Food\Healt_Food\Client\obj\Debug\net7.0\build-gz\Zsvqe8aX.gz
+D:\develop\freelance\Health_Eat\Healt_Food\Healt_Food\Client\obj\Debug\net7.0\build-gz\ZEx+L+Kn.gz

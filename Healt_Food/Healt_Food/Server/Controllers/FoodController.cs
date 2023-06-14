@@ -55,5 +55,23 @@ namespace Healt_Food.Server.Controllers
             return Ok();
         }
 
+        [HttpPost("Create")]
+        public async Task<IActionResult> CreateFood(Food food)
+        {
+            await _dbContext.AddAsync(food);
+            await _dbContext.SaveChangesAsync();
+
+            return Ok();
+        }
+
+        [HttpDelete("Delete")]
+        public async Task<IActionResult> DeleteFood(int Id)
+        {
+            var food = await _dbContext.Foods.FirstOrDefaultAsync(x => x.Id == Id);
+
+            _dbContext.Remove(food);
+            await _dbContext.SaveChangesAsync();
+            return Ok();
+        }
     }
 }
